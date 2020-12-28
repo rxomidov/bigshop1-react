@@ -122,6 +122,7 @@ code {
   border-radius: 1rem;
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(52, 122, 251, 0.19);
   min-height: 10rem;
+  margin: 5rem 0;
 }
 .section-title{
   text-align: center;
@@ -360,6 +361,52 @@ code {
 }
 .mbb{
   margin-bottom: 2px;
+}
+.cart-item{
+  display: flex;
+  justify-content: space-around;
+}
+.cart-item h4{
+  font-size: 1rem;
+}
+.btn-fill{
+  color: #fff;
+  text-transform: uppercase;
+  width: 20%;
+  margin: 0.4rem;
+  border-radius: 1.8rem!important;
+  background: linear-gradient(to right, #8c84f9 0%, #a165f4 100%);
+  border: none;
+  height: 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+btn-fill:hover {
+  background: linear-gradient(to right, #5e5aa8 0%, #6d44a4 100%);
+}
+.amount-btn{
+  border: none;
+  background: #f862a6;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.2rem .5rem;
+  text-transform: capitalize;
+  transition: .3s;
+}
+.remove-btn{
+  border: none;
+  background: #f862a6;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.4rem 1.5rem;
+  text-transform: capitalize;
+  transition: .3s;
+}
+.remove-btn:hover{
+  background: #c0216d;
+}
+.cart-img{
+  width: 4rem;
+  object-fit: contain;
 }
 
 

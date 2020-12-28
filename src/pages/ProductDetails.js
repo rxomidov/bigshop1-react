@@ -1,7 +1,7 @@
 import React from "react";
 import {useParams} from 'react-router-dom';
 import {ProductContext} from "../context/products";
-//import {CartContext} from "../context/cart";
+import {CartContext} from "../context/cart";
 import {useHistory} from 'react-router-dom';
 import Loading from "../components/Loading";
 import {FaCartPlus, FaChevronRight} from "react-icons/all";
@@ -11,7 +11,7 @@ export default function ProductDetails() {
     //console.log(id)
     const history = useHistory();
     const {products} = React.useContext(ProductContext);
-    //const {addToCart} = React.useContext(CartContext);
+    const {addToCart} = React.useContext(CartContext);
     const product = products.find(item => item.id === parseInt(id));
     if (products.length === 0) {
         return <Loading/>
@@ -29,7 +29,7 @@ export default function ProductDetails() {
                         <p>{description}</p>
                         <div className="btn-group px-4">
                             <button className="btn btn-primary px-4" onClick={() => {
-                                //addToCart(product)
+                                addToCart(product);
                                 history.push('/cart')
                             }}>add to cart <FaCartPlus className="ml-1 mbb"/></button>
                             <button type="button" className="btn btn-primary px-4"

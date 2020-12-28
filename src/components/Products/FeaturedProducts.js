@@ -20,7 +20,7 @@ export default function FeaturedProducts(props) {
             <div className="featured-block mt-5 p-3">
                 <h1 className="mt-5">Trendy Arrivals</h1>
                 <ProductList title="featured products"
-                             products={electronics}/>;
+                             products={electronics}/>
             </div>
         </div>
     );
